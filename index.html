@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Snow Flakes</title>
+
+    <style type="text/css">
+        body, html{
+            margin: 0; padding: 0; overflow-x: hidden;
+            background-color: #dedede;
+        }
+        @font-face {
+            font-family: flakes;
+            src: url(WWFlakes.ttf);
+        }
+        @font-face {
+            font-family: xmas-shapes;
+            src: url(Xmas_Doods2.ttf);
+        }
+        @font-face {
+            font-family: xmas-letters;
+            src: url(Kr.ttf);
+        }
+
+        .flake, .shape, .gohenry{
+            border:0px solid white;
+            position: absolute;
+            width: 0;
+            transition-property: top, left, right, opacity, transform;
+            -webkit-transition-property: top, left, right, opacity, -webkit-transform;
+            -moz-transition-property: top, left, right, opacity, -moz-transform;
+
+            transition-timing-function: ease-in;
+            -webkit-transition-timing-function: ease-in;
+            -moz-transition-timing-function: ease-in;
+
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+
+        }
+        .gohenry{ font-family: xmas-letters; color: #CC3333; }
+        .shape{ font-family: xmas-shapes; color: #cc0000; }
+        .flake{ font-family: flakes; }
+
+    </style>
+
+    <script type="text/javascript" src="MooTools-Core-1.5.1-compat-compressed.js"></script>
+    <script type="text/javascript" src="snowFlakes.js"></script>
+
+</head>
+<body>
+
+</body>
+</html>
